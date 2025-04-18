@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript DOM Manipulation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        header {
+            background-color: #f0f0f0;
+            padding: 20px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+        button {
+            padding: 10px 15px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            margin: 5px;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #dynamic-content {
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            margin: 20px 0;
+        }
+        .highlight {
+            background-color: yellow;
+            font-weight: bold;
+        }
+        footer {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 0.9em;
+            color: #666;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DOM Manipulation Demo</h1>
+        <p>This page demonstrates dynamic content changes with JavaScript</p>
+    </header>
+
+    <main>
+        <section>
+            <h2>Dynamic Content Section</h2>
+            <div id="dynamic-content">
+                <p>This text will change when you click the button below.</p>
+            </div>
+            <button id="change-text-btn">Change Text Content</button>
+            <button id="change-style-btn">Modify CSS Styles</button>
+        </section>
+
+        <section>
+            <h2>Element Control Section</h2>
+            <div id="toggle-element" class="highlight">
+                <p>This element can be toggled on and off.</p>
+            </div>
+            <button id="toggle-element-btn">Toggle Element Visibility</button>
+        </section>
+    </main>
+
+    <footer>
+        <p>Created with HTML5 and JavaScript</p>
+    </footer>
+
+    <script src="script1.js"></script>
+</body>
+</html>
